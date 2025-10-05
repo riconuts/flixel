@@ -137,8 +137,7 @@ class FlxTypedGroup<T:FlxBasic> extends FlxBasic
 			/* Note: basic.destroy() will remove it from it's container, which may be this group.
 			 * So we need to make sure this loop can handle deletions
 			 */
-			var count = length;
-			while (count-- > 0)
+			while (length-- > 0)
 			{
 				final basic = members.shift();
 				if (basic != null)
